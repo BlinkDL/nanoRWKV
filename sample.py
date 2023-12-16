@@ -6,7 +6,7 @@ import pickle
 from contextlib import nullcontext
 import torch
 import tiktoken
-from model import GPTConfig, GPT
+from model import GPTConfig, GPT, LayerState
 
 # -----------------------------------------------------------------------------
 init_from = 'resume' # either 'resume' (from an out_dir) or a gpt2 variant (e.g. 'gpt2-xl')
@@ -73,18 +73,32 @@ else:
     encode = lambda s: enc.encode(s, allowed_special={"<|endoftext|>"})
     decode = lambda l: enc.decode(l)
 
+# test, that rnn mode is completely equals to transformer mode
+def test_rnn_mode():
+    test_seq = torch.randint(0, gptconf.vocab_size, size=(1, gptconf.block_size))
+    gt, _ = model.forward(test_seq, warn=False)
+
+    states = [LayerState(gptconf, 1, ptdtype, device) for _ in range(gptconf.n_layer)]
+    for i, test_token in enumerate(test_seq[0]):
+        tokens = torch.tensor([test_token], dtype=torch.long, device=device)
+        pos = torch.tensor([i], dtype=torch.long, device=device)
+        logits, states = model.forward_step(tokens, pos, states)
+        assert torch.allclose(gt[:, i], logits, rtol=5e-2, atol=1e-5), i
+
 # encode the beginning of the prompt
 if start.startswith('FILE:'):
     with open(start[5:], 'r', encoding='utf-8') as f:
         start = f.read()
 start_ids = encode(start)
-x = (torch.tensor(start_ids, dtype=torch.long, device=device)[None, ...])
+start_ids = torch.tensor(start_ids, dtype=torch.long, device=device)
 
 # run generation
 with torch.no_grad():
     with ctx:
+        enable_test = True  # temporal optional RNN mode validation
+        if enable_test:
+            test_rnn_mode()
+
         for k in range(num_samples):
-            print('(note: this is using "GPT-mode" for inference (very slow), so we limit it to 100 characters. The much faster "RNN-mode" for inference is coming soon)')
-            y = model.generate(x, 100, temperature=temperature, top_k=top_k)
-            print(decode(y[0].tolist()))
-            print('---------------')
+            predicted = model.generate(start_ids, gptconf.block_size, temperature=temperature, top_k=top_k)
+            print(decode(predicted.tolist()))
