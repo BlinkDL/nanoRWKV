@@ -1,18 +1,4 @@
-<style>
 
-#img {
-    border-radius: 7.5px;
-}
-
-code {
-    border-radius: 50px;
-}
-
-body {
-    text-align: justify;
-}
-
-</style>
 
 # ```NanoRWKV (Work In Progress)```
 
