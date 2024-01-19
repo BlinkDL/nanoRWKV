@@ -1,7 +1,7 @@
 
-# tiny shakespeare
+# Tiny Shakespeare
 
-Tiny shakespeare, of the good old char-rnn fame :)
+Tiny shakespeare, of the good old char-rnn fame 🙂
 
 After running `prepare.py`:
 
