@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1534, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/unsalgokdag/git/professional/nanoRWKV/train.py", line 266, in <module>
+    gen_x = torch.tensor([meta["stoi"][i] for i in start]).tile(batch_size, 1).to(device)
+  File "/Users/unsalgokdag/git/professional/nanoRWKV/train.py", line 266, in <listcomp>
+    gen_x = torch.tensor([meta["stoi"][i] for i in start]).tile(batch_size, 1).to(device)

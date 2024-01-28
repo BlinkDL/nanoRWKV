@@ -1,0 +1,53 @@
+2024-01-28 02:04:07,943 INFO    StreamThr :91750 [internal.py:wandb_internal():86] W&B internal server running at pid: 91750, started at: 2024-01-28 02:04:07.942185
+2024-01-28 02:04:07,945 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: status
+2024-01-28 02:04:07,956 INFO    WriterThread:91750 [datastore.py:open_for_write():87] open: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/run-ljzk0vqc.wandb
+2024-01-28 02:04:07,957 DEBUG   SenderThread:91750 [sender.py:send():382] send: header
+2024-01-28 02:04:07,967 DEBUG   SenderThread:91750 [sender.py:send():382] send: run
+2024-01-28 02:04:08,737 INFO    SenderThread:91750 [dir_watcher.py:__init__():211] watching files in: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files
+2024-01-28 02:04:08,737 INFO    SenderThread:91750 [sender.py:_start_run_threads():1136] run started: ljzk0vqc with start time 1706403847.942427
+2024-01-28 02:04:08,752 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: check_version
+2024-01-28 02:04:08,752 DEBUG   SenderThread:91750 [sender.py:send_request():409] send_request: check_version
+2024-01-28 02:04:09,332 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: run_start
+2024-01-28 02:04:09,339 DEBUG   HandlerThread:91750 [system_info.py:__init__():27] System info init
+2024-01-28 02:04:09,339 DEBUG   HandlerThread:91750 [system_info.py:__init__():42] System info init done
+2024-01-28 02:04:09,339 INFO    HandlerThread:91750 [system_monitor.py:start():194] Starting system monitor
+2024-01-28 02:04:09,340 INFO    SystemMonitor:91750 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-28 02:04:09,340 INFO    HandlerThread:91750 [system_monitor.py:probe():214] Collecting system info
+2024-01-28 02:04:09,342 INFO    SystemMonitor:91750 [interfaces.py:start():190] Started cpu monitoring
+2024-01-28 02:04:09,344 DEBUG   HandlerThread:91750 [system_info.py:probe():151] Probing system
+2024-01-28 02:04:09,344 INFO    SystemMonitor:91750 [interfaces.py:start():190] Started disk monitoring
+2024-01-28 02:04:09,344 INFO    SystemMonitor:91750 [interfaces.py:start():190] Started gpuapple monitoring
+2024-01-28 02:04:09,345 INFO    SystemMonitor:91750 [interfaces.py:start():190] Started memory monitoring
+2024-01-28 02:04:09,348 INFO    SystemMonitor:91750 [interfaces.py:start():190] Started network monitoring
+2024-01-28 02:04:09,353 DEBUG   HandlerThread:91750 [system_info.py:_probe_git():136] Probing git
+2024-01-28 02:04:09,376 DEBUG   HandlerThread:91750 [system_info.py:_probe_git():144] Probing git done
+2024-01-28 02:04:09,376 DEBUG   HandlerThread:91750 [system_info.py:probe():199] Probing system done
+2024-01-28 02:04:09,376 DEBUG   HandlerThread:91750 [system_monitor.py:probe():223] {'os': 'macOS-14.2.1-arm64-arm-64bit', 'python': '3.10.13', 'heartbeatAt': '2024-01-28T01:04:09.344182', 'startedAt': '2024-01-28T01:04:07.935693', 'docker': None, 'cuda': None, 'args': ('config/train_haydar.py',), 'state': 'running', 'program': '/Users/unsalgokdag/git/professional/nanoRWKV/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:BlinkDL/nanoRWKV.git', 'commit': '381773e73b31f8f94c3ddaf2337399652c90dd01'}, 'email': 'unsal.gokdag@gmail.com', 'root': '/Users/unsalgokdag/git/professional/nanoRWKV', 'host': 'Unsals-MacBook-Pro.local', 'username': 'unsalgokdag', 'executable': '/Users/unsalgokdag/miniforge3/envs/RWKV-LM/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3228, 'min': 600, 'max': 3228}, 'cpu_freq_per_core': [{'current': 3228, 'min': 600, 'max': 3228}], 'disk': {'/': {'total': 3721.8717193603516, 'used': 9.428443908691406}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 64.0}}
+2024-01-28 02:04:09,376 INFO    HandlerThread:91750 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-28 02:04:09,376 INFO    HandlerThread:91750 [system_monitor.py:probe():227] Publishing system info
+2024-01-28 02:04:09,376 DEBUG   HandlerThread:91750 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-01-28 02:04:09,741 INFO    Thread-16 :91750 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files/conda-environment.yaml
+2024-01-28 02:04:10,742 INFO    Thread-16 :91750 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files/conda-environment.yaml
+2024-01-28 02:04:10,775 DEBUG   HandlerThread:91750 [system_info.py:_save_conda():220] Saving conda packages done
+2024-01-28 02:04:10,776 INFO    HandlerThread:91750 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-28 02:04:10,778 DEBUG   SenderThread:91750 [sender.py:send():382] send: files
+2024-01-28 02:04:10,778 INFO    SenderThread:91750 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-28 02:04:10,783 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-28 02:04:10,783 DEBUG   SenderThread:91750 [sender.py:send_request():409] send_request: python_packages
+2024-01-28 02:04:10,784 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:04:10,784 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:04:10,785 DEBUG   SenderThread:91750 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:04:11,328 DEBUG   SenderThread:91750 [sender.py:send():382] send: telemetry
+2024-01-28 02:04:11,600 INFO    wandb-upload_0:91750 [upload_job.py:push():131] Uploaded file /var/folders/z7/3gg9dn9d10g0krf2rqbxfvrm0000gn/T/tmpgt3iwzixwandb/e9aid8uc-wandb-metadata.json
+2024-01-28 02:04:11,743 INFO    Thread-16 :91750 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files/output.log
+2024-01-28 02:04:11,743 INFO    Thread-16 :91750 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files/wandb-metadata.json
+2024-01-28 02:04:11,743 INFO    Thread-16 :91750 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files/requirements.txt
+2024-01-28 02:04:13,486 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:04:13,752 INFO    Thread-16 :91750 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020407-ljzk0vqc/files/output.log
+2024-01-28 02:04:18,502 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:04:23,520 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:04:25,785 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:04:25,788 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:04:25,788 DEBUG   SenderThread:91750 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:04:29,316 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:04:34,330 DEBUG   HandlerThread:91750 [handler.py:handle_request():146] handle_request: status_report

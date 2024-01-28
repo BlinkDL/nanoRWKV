@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/unsalgokdag/miniforge3/envs/RWKV-LM/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/unsalgokdag/git/professional/nanoRWKV/model.py", line 391, in generate
+    for _ in tqdm(range(max_new_tokens), disable=not pbar):

@@ -1,0 +1,20 @@
+/Users/unsalgokdag/git/professional/nanoRWKV/model.py:91: UserWarning:
+################################################################################
+                                      Note
+The GPT-mode forward() should only be called when we are training models.
+Now we are using it for inference for simplicity, which works, but will be very inefficient.
+################################################################################
+  warnings.warn(f'\n{"#"*80}\n\n{" "*38}Note\nThe GPT-mode forward() should only be called when we are training models.\nNow we are using it for inference for simplicity, which works, but will be very inefficient.\n\n{"#"*80}\n')
+step 0, tokens 0: train loss 3.8161, val loss 3.8145 avg perplexity: 5.2307
+iter 0: loss 3.8231, time 9089.73ms, mfu -100.00%
+iter 25: loss 2.1975, time 1716.86ms, mfu 0.50%
+iter 50: loss 1.7122, time 1730.96ms, mfu 0.50%
+iter 75: loss 1.5445, time 1695.08ms, mfu 0.50%
+step 100, tokens 1,638,400: train loss 1.3673, val loss 1.3539 avg perplexity: 1.1066
+saving checkpoint to out-haydar
+iter 100: loss 1.4302, time 6309.90ms, mfu 0.47%
+iter 125: loss 1.3932, time 1754.48ms, mfu 0.47%
+iter 150: loss 1.2823, time 1831.02ms, mfu 0.47%
+iter 175: loss 1.2133, time 1661.57ms, mfu 0.47%
+step 200, tokens 3,276,800: train loss 1.1692, val loss 1.1690 avg perplexity: 0.8267
+saving checkpoint to out-haydar

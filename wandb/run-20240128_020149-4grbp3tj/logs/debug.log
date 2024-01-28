@@ -1,0 +1,26 @@
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Configure stats pid to 91608
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Loading settings from /Users/unsalgokdag/.config/wandb/settings
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Loading settings from /Users/unsalgokdag/git/professional/nanoRWKV/wandb/settings
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/Users/unsalgokdag/git/professional/nanoRWKV/train.py', 'program': '/Users/unsalgokdag/git/professional/nanoRWKV/train.py'}
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_init.py:_log_setup():526] Logging user logs to /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020149-4grbp3tj/logs/debug.log
+2024-01-28 02:01:49,549 INFO    MainThread:91608 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_020149-4grbp3tj/logs/debug-internal.log
+2024-01-28 02:01:49,550 INFO    MainThread:91608 [wandb_init.py:init():566] calling init triggers
+2024-01-28 02:01:49,550 INFO    MainThread:91608 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out-haydar', 'eval_interval': 100, 'log_interval': 25, 'eval_iters': 8, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'scratch', 'wandb_log': True, 'wandb_project': 'haydar', 'wandb_run_name': 'RWKV', 'dataset': 'haydar_dumen', 'gradient_accumulation_steps': 1, 'batch_size': 8, 'block_size': 256, 'n_layer': 8, 'n_head': 4, 'n_embd': 512, 'dropout': 0.2, 'bias': False, 'learning_rate': 0.0003, 'max_iters': 600000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 10, 'lr_decay_iters': 10000, 'min_lr': 3e-05, 'start': '\n', 'sample_length': 16, 'backend': 'nccl', 'device': 'cpu', 'dtype': 'float16', 'compile': False}
+2024-01-28 02:01:49,550 INFO    MainThread:91608 [wandb_init.py:init():616] starting backend
+2024-01-28 02:01:49,550 INFO    MainThread:91608 [wandb_init.py:init():620] setting up manager
+2024-01-28 02:01:49,551 INFO    MainThread:91608 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-01-28 02:01:49,553 INFO    MainThread:91608 [wandb_init.py:init():628] backend started and connected
+2024-01-28 02:01:49,557 INFO    MainThread:91608 [wandb_init.py:init():720] updated telemetry
+2024-01-28 02:01:49,576 INFO    MainThread:91608 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-01-28 02:01:50,053 ERROR   MainThread:91608 [wandb_init.py:init():779] encountered error: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2024-01-28 02:01:50,204 ERROR   MainThread:91608 [wandb_init.py:init():1194] The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+Traceback (most recent call last):
+  File "/Users/unsalgokdag/miniforge3/envs/RWKV-LM/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/Users/unsalgokdag/miniforge3/envs/RWKV-LM/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.AuthenticationError: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)

@@ -1,0 +1,227 @@
+2024-01-28 02:10:52,038 INFO    StreamThr :92061 [internal.py:wandb_internal():86] W&B internal server running at pid: 92061, started at: 2024-01-28 02:10:52.036218
+2024-01-28 02:10:52,039 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status
+2024-01-28 02:10:52,050 INFO    WriterThread:92061 [datastore.py:open_for_write():87] open: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/run-vxikl6bu.wandb
+2024-01-28 02:10:52,050 DEBUG   SenderThread:92061 [sender.py:send():382] send: header
+2024-01-28 02:10:52,060 DEBUG   SenderThread:92061 [sender.py:send():382] send: run
+2024-01-28 02:10:52,775 INFO    SenderThread:92061 [dir_watcher.py:__init__():211] watching files in: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files
+2024-01-28 02:10:52,775 INFO    SenderThread:92061 [sender.py:_start_run_threads():1136] run started: vxikl6bu with start time 1706404252.037515
+2024-01-28 02:10:52,789 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: check_version
+2024-01-28 02:10:52,789 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: check_version
+2024-01-28 02:10:52,990 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: run_start
+2024-01-28 02:10:52,996 DEBUG   HandlerThread:92061 [system_info.py:__init__():27] System info init
+2024-01-28 02:10:52,996 DEBUG   HandlerThread:92061 [system_info.py:__init__():42] System info init done
+2024-01-28 02:10:52,996 INFO    HandlerThread:92061 [system_monitor.py:start():194] Starting system monitor
+2024-01-28 02:10:52,997 INFO    SystemMonitor:92061 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-28 02:10:52,997 INFO    HandlerThread:92061 [system_monitor.py:probe():214] Collecting system info
+2024-01-28 02:10:52,998 DEBUG   HandlerThread:92061 [system_info.py:probe():151] Probing system
+2024-01-28 02:10:52,998 INFO    SystemMonitor:92061 [interfaces.py:start():190] Started cpu monitoring
+2024-01-28 02:10:53,000 INFO    SystemMonitor:92061 [interfaces.py:start():190] Started disk monitoring
+2024-01-28 02:10:53,000 INFO    SystemMonitor:92061 [interfaces.py:start():190] Started gpuapple monitoring
+2024-01-28 02:10:53,001 INFO    SystemMonitor:92061 [interfaces.py:start():190] Started memory monitoring
+2024-01-28 02:10:53,001 INFO    SystemMonitor:92061 [interfaces.py:start():190] Started network monitoring
+2024-01-28 02:10:53,007 DEBUG   HandlerThread:92061 [system_info.py:_probe_git():136] Probing git
+2024-01-28 02:10:53,029 DEBUG   HandlerThread:92061 [system_info.py:_probe_git():144] Probing git done
+2024-01-28 02:10:53,029 DEBUG   HandlerThread:92061 [system_info.py:probe():199] Probing system done
+2024-01-28 02:10:53,030 DEBUG   HandlerThread:92061 [system_monitor.py:probe():223] {'os': 'macOS-14.2.1-arm64-arm-64bit', 'python': '3.10.13', 'heartbeatAt': '2024-01-28T01:10:52.998766', 'startedAt': '2024-01-28T01:10:52.030602', 'docker': None, 'cuda': None, 'args': ('config/train_haydar.py',), 'state': 'running', 'program': '/Users/unsalgokdag/git/professional/nanoRWKV/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'git@github.com:BlinkDL/nanoRWKV.git', 'commit': '381773e73b31f8f94c3ddaf2337399652c90dd01'}, 'email': 'unsal.gokdag@gmail.com', 'root': '/Users/unsalgokdag/git/professional/nanoRWKV', 'host': 'Unsals-MacBook-Pro.local', 'username': 'unsalgokdag', 'executable': '/Users/unsalgokdag/miniforge3/envs/RWKV-LM/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3228, 'min': 600, 'max': 3228}, 'cpu_freq_per_core': [{'current': 3228, 'min': 600, 'max': 3228}], 'disk': {'/': {'total': 3721.8717193603516, 'used': 9.428443908691406}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 64.0}}
+2024-01-28 02:10:53,030 INFO    HandlerThread:92061 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-28 02:10:53,030 INFO    HandlerThread:92061 [system_monitor.py:probe():227] Publishing system info
+2024-01-28 02:10:53,030 DEBUG   HandlerThread:92061 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-01-28 02:10:53,783 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/conda-environment.yaml
+2024-01-28 02:10:54,596 DEBUG   HandlerThread:92061 [system_info.py:_save_conda():220] Saving conda packages done
+2024-01-28 02:10:54,597 INFO    HandlerThread:92061 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-28 02:10:54,600 DEBUG   SenderThread:92061 [sender.py:send():382] send: files
+2024-01-28 02:10:54,600 INFO    SenderThread:92061 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-28 02:10:54,605 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-28 02:10:54,605 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: python_packages
+2024-01-28 02:10:54,606 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:10:54,606 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:10:54,608 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:10:54,781 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/conda-environment.yaml
+2024-01-28 02:10:54,781 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/wandb-metadata.json
+2024-01-28 02:10:54,782 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/requirements.txt
+2024-01-28 02:10:55,115 DEBUG   SenderThread:92061 [sender.py:send():382] send: telemetry
+2024-01-28 02:10:55,653 INFO    wandb-upload_0:92061 [upload_job.py:push():131] Uploaded file /var/folders/z7/3gg9dn9d10g0krf2rqbxfvrm0000gn/T/tmp1xwtwa3mwandb/et2lig23-wandb-metadata.json
+2024-01-28 02:10:55,786 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:10:57,122 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:10:57,790 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:11:02,139 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:02,317 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-28 02:11:02,320 DEBUG   SenderThread:92061 [sender.py:send():382] send: history
+2024-01-28 02:11:02,320 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: summary_record
+2024-01-28 02:11:02,321 INFO    SenderThread:92061 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-28 02:11:02,805 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/wandb-summary.json
+2024-01-28 02:11:04,816 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:11:07,716 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:09,609 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:11:09,610 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:11:09,610 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:11:12,975 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:17,985 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:23,008 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:23,886 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/config.yaml
+2024-01-28 02:11:24,614 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:11:24,615 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:11:24,615 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:11:28,882 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:33,893 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:38,911 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:39,618 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:11:39,619 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:11:39,619 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:11:44,876 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:46,963 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:11:49,926 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:53,006 DEBUG   SystemMonitor:92061 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-28 02:11:53,008 DEBUG   SenderThread:92061 [sender.py:send():382] send: telemetry
+2024-01-28 02:11:53,008 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:11:54,619 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:11:54,621 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:11:54,622 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:11:55,912 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:11:56,993 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/config.yaml
+2024-01-28 02:12:01,146 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:06,169 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:09,622 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:12:09,626 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:12:09,626 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:12:14,648 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-28 02:12:15,339 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:20,364 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:23,010 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:12:24,627 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:12:24,627 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:12:24,628 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:12:25,951 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:29,136 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:12:30,975 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:35,994 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:39,629 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:12:39,629 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:12:39,630 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:12:41,810 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:46,823 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:51,844 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:12:53,015 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:12:54,629 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:12:54,632 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:12:54,632 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:12:57,104 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:02,120 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:07,131 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:09,633 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:13:09,636 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:13:09,636 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:13:11,296 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:13:13,052 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:18,069 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:23,022 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:13:24,023 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:24,637 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:13:24,637 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:13:24,638 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:13:29,914 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:34,930 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:39,641 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:13:39,642 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:13:39,642 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:13:40,920 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:45,940 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:50,954 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:53,024 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:13:54,643 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:13:54,643 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:13:54,646 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:13:55,060 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-28 02:13:55,061 DEBUG   SenderThread:92061 [sender.py:send():382] send: history
+2024-01-28 02:13:55,061 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: summary_record
+2024-01-28 02:13:55,062 INFO    SenderThread:92061 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-28 02:13:55,433 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/wandb-summary.json
+2024-01-28 02:13:56,064 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:13:57,444 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:14:01,414 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:06,431 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:09,646 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:14:09,647 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:14:09,648 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:14:12,020 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:17,035 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:22,041 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:23,025 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:14:24,650 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:14:24,651 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:14:24,651 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:14:28,019 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:33,033 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:38,055 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:39,655 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:14:39,656 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:14:39,656 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:14:43,609 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:14:43,821 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:48,836 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:53,030 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:14:54,031 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:14:54,660 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:14:54,660 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:14:54,660 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:14:59,920 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:04,940 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:09,660 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:15:09,662 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:15:09,662 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:15:09,959 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:14,971 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:19,991 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:23,035 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:15:24,662 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:15:24,663 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:15:24,664 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:15:25,064 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:29,745 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:15:30,600 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:35,613 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:39,667 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:15:39,667 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:15:39,670 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:15:40,866 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:45,885 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:50,902 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:15:53,040 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:15:54,672 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:15:54,672 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:15:54,672 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:15:56,899 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:01,914 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:06,930 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:09,671 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:16:09,672 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:16:09,675 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:16:10,883 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:16:12,497 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:17,509 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:22,522 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:23,045 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:16:24,674 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:16:24,674 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:16:24,677 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:16:28,052 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:33,070 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:38,091 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:39,674 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:16:39,675 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:16:39,680 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:16:44,024 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:49,041 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:53,051 DEBUG   SenderThread:92061 [sender.py:send():382] send: stats
+2024-01-28 02:16:54,054 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report
+2024-01-28 02:16:54,678 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-28 02:16:54,679 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: stop_status
+2024-01-28 02:16:54,684 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-28 02:16:55,996 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-28 02:16:55,997 DEBUG   SenderThread:92061 [sender.py:send():382] send: history
+2024-01-28 02:16:55,997 DEBUG   SenderThread:92061 [sender.py:send_request():409] send_request: summary_record
+2024-01-28 02:16:55,997 INFO    SenderThread:92061 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-28 02:16:56,033 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/wandb-summary.json
+2024-01-28 02:16:57,037 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:16:59,044 INFO    Thread-16 :92061 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/unsalgokdag/git/professional/nanoRWKV/wandb/run-20240128_021052-vxikl6bu/files/output.log
+2024-01-28 02:16:59,372 DEBUG   HandlerThread:92061 [handler.py:handle_request():146] handle_request: status_report

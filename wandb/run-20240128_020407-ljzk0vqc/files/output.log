@@ -1,0 +1,14 @@
+/Users/unsalgokdag/git/professional/nanoRWKV/model.py:89: UserWarning:
+################################################################################
+                                      Note
+The GPT-mode forward() should only be called when we are training models.
+Now we are using it for inference for simplicity, which works, but will be very inefficient.
+################################################################################
+  warnings.warn(f'\n{"#"*80}\n\n{" "*38}Note\nThe GPT-mode forward() should only be called when we are training models.\nNow we are using it for inference for simplicity, which works, but will be very inefficient.\n\n{"#"*80}\n')
+Traceback (most recent call last):
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py", line 1534, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "/Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/unsalgokdag/git/professional/nanoRWKV/train.py", line 267, in <module>
+    _, ppl = model.generate(gen_x, sample_length)
