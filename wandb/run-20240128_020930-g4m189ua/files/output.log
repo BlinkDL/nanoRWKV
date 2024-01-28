@@ -1,7 +1,0 @@
-/Users/unsalgokdag/git/professional/nanoRWKV/model.py:91: UserWarning:
-################################################################################
-                                      Note
-The GPT-mode forward() should only be called when we are training models.
-Now we are using it for inference for simplicity, which works, but will be very inefficient.
-################################################################################
-  warnings.warn(f'\n{"#"*80}\n\n{" "*38}Note\nThe GPT-mode forward() should only be called when we are training models.\nNow we are using it for inference for simplicity, which works, but will be very inefficient.\n\n{"#"*80}\n')

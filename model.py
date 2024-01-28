@@ -22,6 +22,14 @@ from torch.nn import functional as F
 from tqdm import tqdm
 
 
+# The modified softmax version:
+def surftmex(x, dim=-1):
+    maxes = torch.max(x, dim, keepdim=True)[0]
+    x_exp = torch.exp(x-maxes)
+    x_exp_sum = torch.sum(x_exp, dim, keepdim=True)
+    output_custom = x_exp/(torch.exp(-maxes)+x_exp_sum) # << The key bit is the +torch.exp(-maxes)
+    return output_custom
+
 class LayerNorm(nn.Module):
     """ LayerNorm but with an optional bias. PyTorch doesn't support simply bias=False """
 
